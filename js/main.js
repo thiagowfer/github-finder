@@ -9,6 +9,8 @@ $().ready(function() {
                client_id: '34ea6e924809745ff2f9',
                client_secret: 'b56d8f2265dabc804c854cc73770ff43c769f32c'
            }
+       }).done(function(user){
+        console.log(user);
        });
    })
 });
