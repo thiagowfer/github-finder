@@ -10,6 +10,7 @@ $().ready(function() {
                client_secret: 'b56d8f2265dabc804c854cc73770ff43c769f32c'
            }
        }).done(function(user){
+        // Show profile info
         $('#profile').html(`
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="">
@@ -18,9 +19,14 @@ $().ready(function() {
                 <div class="row">
                     <div class="col-md-3">
                         <img style="width:15rem" src="${user.avatar_url}" class="thumbnail">
+                        <a target="_blank" class="btn btn-primary" href="${user.html_url}">Show Profile<a/>
                     </div>
                     <div class="col-md-9">
-                    
+                    <span class="badge badge-primary">Public Repos: ${user.public_repos}</span>
+                    <span class="badge badge-secondary">Public Gists: ${user.public_gists}</span>
+                    <span class="badge badge-success">Followers: ${user.followers}</span>
+                    <span class="badge badge-danger">Following: ${user.following}</span>
+                    <br/><br/>
                     </div>
                 </div>
                 </div>
