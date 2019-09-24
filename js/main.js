@@ -49,16 +49,16 @@ $(document).ready(function(){
                 <a target="_blank" class="btn btn-primary btn-block" href="${user.html_url}">View Profile</a>
               </div>
               <div class="col-md-9">
-                <span class="badge badge-dark">Public Repos: ${user.public_repos}</span>
-                <span class="badge badge-primary">Public Gists: ${user.public_gists}</span>
-                <span class="badge badge-success">Followers: ${user.followers}</span>
-                <span class="badge badge-info">Following: ${user.following}</span>
+                <span class="badge badge-dark"><h6>Public Repos: ${user.public_repos}</h6></span>
+                <span class="badge badge-primary"><h6>Public Gists: ${user.public_gists}</h6></span>
+                <span class="badge badge-success"><h6>Followers: ${user.followers}</h6></span>
+                <span class="badge badge-info"><h6>Following: ${user.following}</h6></span>
                 <br><br>
                 <ul class="list-group">
-                  <li class="list-group-item">Company: ${user.company}</li>
-                  <li class="list-group-item">Website/blog: <a href="${user.blog}" target="_blank">${user.blog}</a></li>
-                  <li class="list-group-item">Location: ${user.location}</li>
-                  <li class="list-group-item">Member Since: ${user.created_at}</li>
+                  <li class="list-group-item"><h5><strong>Company:</strong> ${user.company}</h5></li>
+                  <li class="list-group-item"><h5><strong>Website/blog:</strong> <a href="${user.blog}" target="_blank">${user.blog}</a></h5></li>
+                  <li class="list-group-item"><h5><strong>Location:</strong> ${user.location}</h5></li>
+                  <li class="list-group-item"><h5><strong>Member Since:</strong> ${user.created_at}</h5></li>
                 </ul>
                 </div>
               </div>
